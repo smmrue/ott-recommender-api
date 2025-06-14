@@ -12,7 +12,6 @@ export default async function handler(req, res) {
     if (req.method === "OPTIONS") {
         return res.status(200).end();
 }
-console.log("요청 body 확인:", req.body);
 const { ott, genre } = req.body;
 if (!ott || !genre) {
     return res.status(400).json({error:"ott와 장르 선택을 해야 합니다. "});
