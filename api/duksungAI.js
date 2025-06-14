@@ -20,7 +20,6 @@ if (!ott || !genre) {
 
 
 try {
-    const today = new Date().toISOString().slice(0, 10);
     const prompt = `
     OTT 플랫폼: ${ott}
     원하는 장르: ${genre}
