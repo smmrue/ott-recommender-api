@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
 const { ott, genre } = req.body;
 if (!ott || !genre) {
-    return res.status(400).json({error:"ott와 장르 선택이 필요합니다. "});
+    return res.status(400).json({error:"ott와 장르 선택을 해야 합니다다. "});
 } 
 
 
